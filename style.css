@@ -1,0 +1,13 @@
+#board {
+    background-color: darkcyan;
+    height: 250px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+.square {
+    background-color: antiquewhite;
+}
