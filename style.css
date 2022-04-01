@@ -1,5 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
+body {
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #F7F5F2;
+}
+
+header {
+    font-family: 'Boogaloo', cursive;
+    font-size: 35px;
+    color: white;
+    background-color: #8D8DAA;
+    height: 65px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form {
+    display: grid;
+}
+
 #board {
-    background-color: darkcyan;
+    border: 5px dotted #8D8DAA;
+    border-radius: 33px;
     height: 250px;
     width: 250px;
     display: grid;
@@ -9,5 +46,53 @@
 }
 
 .square {
-    background-color: antiquewhite;
+    background-color: #DFDFDE;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#one {
+    border-top-left-radius: 30px;
+}
+
+#three {
+    border-top-right-radius: 30px;
+}
+
+#seven {
+    border-bottom-left-radius: 30px;
+}
+
+#nine {
+    border-bottom-right-radius: 30px;
+}
+
+#button {
+    padding: 8px 12px 8px 12px;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #F56D91;
+    border: 0px;
+    border-radius: 10px;
+    font-weight: 900;
+    color: white;
+    transition: 200ms;
+}
+
+#button:hover {
+    background-color: #f0285e;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+#display {
+    height: 23px;
+    width: 150px;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    background-color: #575775;
+    border: 5px double white;
+    border-radius: 15px;
 }
